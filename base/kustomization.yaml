@@ -2,7 +2,7 @@ resources:
 #- namespace.yaml
 - cm.yaml
 - deploy.yaml
-#- ingress.yaml
+- ingress.yaml
 - pvc.yaml
 - svc.yaml
 
