@@ -1,0 +1,16 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: zigbee2mqtt
+  namespace: zigbee2mqtt
+spec:
+  template:
+    spec:
+      nodeSelector:
+        zigbee-dongle: connected
+      containers:
+        - name: zigbee2mqtt
+          env:
+            - name: ZIGBEE2MQTT_CONFIG_MQTT_SERVER # optional - can also be configured in the configuration.yaml in the configmap
+              value: mqtt://mosquitto-svc.mosquitto.svc.cluster.local:8883  ##"mqtt://10.42.221.153:8883"
