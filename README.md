@@ -4,10 +4,10 @@
 apiVersion: fleet.cattle.io/v1alpha1
 kind: GitRepo
 metadata:
-  name: home-assistant
+  name: zigbee2mqtt
   namespace: fleet-default
   labels:
-    home-assistant: enabled
+    zigbee2mqtt: enabled
 spec:
   branch: main
   clientSecretName: auth-hp48c
