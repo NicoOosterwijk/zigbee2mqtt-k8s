@@ -1,0 +1,4 @@
+defaultNamespace: zigbee2mqtt
+
+kustomize:
+  dir: ""
