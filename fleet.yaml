@@ -1,4 +1,11 @@
 defaultNamespace: zigbee2mqtt
 
+NamespaceLabels:
+  app.kubernetes.io/managed-by: Helm
+
+NamespaceAnnotations:
+  meta.helm.sh/release-name: zigbee2mqtt
+  meta.helm.sh/release-namespace: zigbee2mqtt
+
 kustomize:
   dir: ""

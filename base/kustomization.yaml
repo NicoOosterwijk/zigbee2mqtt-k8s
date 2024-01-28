@@ -1,15 +1,8 @@
 resources:
-- namespace.yaml
+#- namespace.yaml
 - cm.yaml
 - deploy.yaml
 #- ingress.yaml
 - pvc.yaml
 - svc.yaml
 
-commonLabels:
-  app.kubernetes.io/name: zigbee2mqtt
-  app.kubernetes.io/managed-by: Helm
-  app: zigbee2mqtt
-commonAnnotations:
-  meta.helm.sh/release-name: zigbee2mqtt
-  meta.helm.sh/release-namespace: zigbee2mqtt
