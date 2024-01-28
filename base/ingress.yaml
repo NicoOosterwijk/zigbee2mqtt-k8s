@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   annotations:
     kubernetes.io/ingress.class: nginx
-  name: z3m-ingress
+  name: z2m-ingress
   namespace: zigbee2mqtt
 spec:
   rules:
