@@ -13,4 +13,4 @@ spec:
         - name: zigbee2mqtt
           env:
             - name: ZIGBEE2MQTT_CONFIG_MQTT_SERVER # optional - can also be configured in the configuration.yaml in the configmap
-              value: mqtt://mosquitto-svc.mosquitto.svc.cluster.local:8883  ##"mqtt://10.42.221.153:8883"
+              value: mqtts://mosquitto-svc.mosquitto.svc.cluster.local:8883  ##"mqtt://10.42.221.153:8883"
