@@ -17,7 +17,7 @@ data:
     # MQTT server URL
     mqtt:
       base_topic: zigbee2mqtt
-      server: "mqtt://10.43.74.124:8883" # mqtt://<name_of_pod>.<name_of_namespace> (mosquitto)
+      server: "mqtt://mosquitto-svc.mosquitto" # mqtt://<name_of_pod>.<name_of_namespace> (mosquitto)
     # Zigbee Adapter path
     serial:
       port: /dev/ttyACM0
