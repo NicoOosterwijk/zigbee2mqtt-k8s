@@ -9,7 +9,7 @@ metadata:
 data:
   configuration.yaml: |-
 
-    # Let new devices join our zigbee network
+    # Let new devices join your zigbee network
     permit_join: true
     # Home Assistant integration (MQTT discovery)
     homeassistant: true
@@ -17,7 +17,7 @@ data:
     # MQTT server URL
     mqtt:
       base_topic: zigbee2mqtt
-      server: "mqtt://mosquitto-svc.mosquitto" # mqtt://<name_of_pod>.<name_of_namespace> (mosquitto)
+      server: "mqtt://mosquitto-svc.mosquitto.svc.cluster.local" 
     # Zigbee Adapter path
     serial:
       port: /dev/ttyACM0
