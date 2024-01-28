@@ -11,7 +11,7 @@ metadata:
 spec:
   branch: main
   clientSecretName: auth-hp48c
-  repo: https://github.com/NicoOosterwijk/zigbee2mqtt.git
+  repo: https://github.com/NicoOosterwijk/zigbee2mqtt-k8s.git
   targets:
     - clusterGroup: zigbee2mqtt
 ```
