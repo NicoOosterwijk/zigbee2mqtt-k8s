@@ -30,7 +30,7 @@ spec:
             - name: "ZIGBEE2MQTT_DATA"
               value: "/data"
             #- name: ZIGBEE2MQTT_CONFIG_MQTT_SERVER # optional - can also be configured in the configuration.yaml in the configmap
-            #  value: "mqtt://10.43.74.124"
+            #  value: "mqtt://mosquitto-svc.mosquitto.svc.cluster.local"
             - name: ZIGBEE2MQTT_CONFIG_EXPERIMENTAL_NEW_API
               value: "true"
             - name: ZIGBEEMQTT_CONFIG_HOMEASSISTANT
